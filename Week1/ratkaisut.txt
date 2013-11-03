@@ -1,0 +1,27 @@
+Man pages:
+#substitute for tree :)
+ls --color=auto
+
+Identity shift:
+alias ls='ls --color=auto'
+
+Man of chrome:
+alias cman='man --html=chromium-browser'
+
+Permanent changes:
+write to ~.bashrc alias cman='man --html=chromium-browser'
+
+Remote shells with SSH:
+alias rvm-restart='rvm_reload_flag=1 source '\''/cs/fs2/home/jirihamb/.rvm/scripts/rvm'\'''
+
+What about the passwords?:
+???
+am i supposed to  add ssh-add to .bash_profile? that does not work. also adding 
+both eval `ssh-agent` and ssh-add, yeilds very weird results...
+
+
+(Non-)logins:
+ssh melkki.cs.helsinki.fi "ls"
+and ssh melkki.cs.helsinki.fi and ls
+
+Shared home directories:

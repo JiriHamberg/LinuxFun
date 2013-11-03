@@ -1,2 +1,2 @@
-#!/bin/sh
-find -type d -print
+#!/bin/bash
+find . \( ! -regex '.*/\..*' \) -type d -print
