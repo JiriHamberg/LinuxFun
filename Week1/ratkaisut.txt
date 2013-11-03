@@ -25,3 +25,7 @@ ssh melkki.cs.helsinki.fi "ls"
 and ssh melkki.cs.helsinki.fi and ls
 
 Shared home directories:
+ssh ukko005.hpc.cs.helsinki.fi "cat LinuxFun/Week1/hostname.txt"
+ssh ukko005.hpc.cs.helsinki.fi "echo 'stuff' > LinuxFun/Week1/hostname.txt; cat LinuxFun/Week1/hostname.txt"
+
+Enter rsync:
