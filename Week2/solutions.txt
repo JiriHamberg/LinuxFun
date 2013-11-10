@@ -1,0 +1,47 @@
+Two at once!:
+	ls ~path/to/dir > ~path/to/stdout_file ~path/to/dir 2> ~path/to/stderror_file
+
+	Hey, what about stdin?
+	running cat basicly just directs stdin to stdout.
+
+Pipelines:
+	Method 1. ls /bin | wc -l 
+		=> 151
+	Method 2. ls /bin > bin_count.txt; wc -l < bin_count.txt
+		=> 151
+
+Filters:
+	ls ~ | grep 'e' | wc -l
+
+
+Interlude: bash:
+	done, see count-homdedir.sh
+
+Some assembly required:
+	done, see ls-November-2011.sh
+
+Just the pics, ma'am:
+	done, see ls-November-2011-pics.sh
+
+Umm, how much is that?:
+	done, see count-November-2011-pics.sh
+
+Remember the backticks:
+	done, see count-current-month-pics.sh
+
+Everybody together now!:
+	done, see count-current-month-pics-find.sh	
+
+Intro to variables:
+	$USER := username
+	$HOME := path to home dir
+	$OSTYPE := type of operating system
+
+Special shell variables:
+	done, see echo.sh
+
+The difference between bash and bash:
+	done, see variable-visibility.sh
+
+Remote invocation:
+	done, see remote-invocation.sh
