@@ -1,7 +1,7 @@
 Two at once!:
-	ls ~path/to/dir > ~path/to/stdout_file ~path/to/dir 2> ~path/to/stderror_file
+	ls ~ /dfgsm/fhdfmknhdfkm > ~ls-out.txt 2> ls-err.txt
 
-	Hey, what about stdin?
+Hey, what about stdin?
 	running cat basicly just directs stdin to stdout.
 
 Pipelines:

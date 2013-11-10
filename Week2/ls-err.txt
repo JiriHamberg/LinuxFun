@@ -1,0 +1,1 @@
+ls: tiedostoa /dfgsm/fhdfmknhdfkm ei voi käsitellä: Tiedostoa tai hakemistoa ei ole
