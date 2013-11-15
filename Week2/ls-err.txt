@@ -1,1 +1,1 @@
-ls: tiedostoa /dfgsm/fhdfmknhdfkm ei voi käsitellä: Tiedostoa tai hakemistoa ei ole
+ls: cannot access /dfgsm/fhdfmknhdfkm: No such file or directory

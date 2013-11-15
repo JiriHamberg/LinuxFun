@@ -1,5 +1,5 @@
 Two at once!:
-	ls ~ /dfgsm/fhdfmknhdfkm > ~ls-out.txt 2> ls-err.txt
+	ls ~ /dfgsm/fhdfmknhdfkm > ls-out.txt 2> ls-err.txt
 
 Hey, what about stdin?
 	running cat basicly just directs stdin to stdout.

@@ -1,0 +1,17 @@
+Not glue but tar:
+    simple tarball:
+        tar cf scripts.tar ~/LinuxFun/Week2/*.sh
+    bz2:
+        tar cjf scripts.tar.bz2 ~/LinuxFun/Week2/*.sh
+    gzip:
+        tar czf scripts.tar.gz ~/LinuxFun/Week2/*.sh
+    wc -c * gives following byte count:
+        10240 scripts.tar
+          728 scripts.tar.bz2
+          669 scripts.tar.gz
+    no shortcuts bz2:
+        tar cf - ~/LinuxFun/Week2/*.sh | bzip2 > scripts.tar.bz2
+    no shortcuts gz:
+        tar cf - ~/LinuxFun/Week2/*.sh | gzip > scripts.tar.gz    
+
+Local and network file systems:
