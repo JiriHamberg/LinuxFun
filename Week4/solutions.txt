@@ -1,0 +1,41 @@
+Longcat:
+	see longcat.sh
+
+Hottest day:
+	see hottest-by-folder.sh
+	lost24/monitor/2012.04.25/10:50/hp-temps.txt 54
+
+...in TSV format:
+	see in-tsv-format.sh
+		sed 's/.*\([0-9]\{4\}\.[0-9]\+\.[0-9]\+\)\/\([0-9]\+:[0-9]\+\)\(\/.*\ \)/\1 \2\t/'
+	Example:
+		./hottest-by-folder.sh ../Week3/lost24/monitor/2011.10.24/16:45/hp-temps.txt | ./in-tsv-format.sh
+			=> 2011.10.24 16:45 	27
+
+Daily maximums redux:
+	see daily-hottest.sh
+		find $1 -type d -regextype sed -regex '.*\/[0-9]\{4\}\.[0-9]\+\.[0-9]\+' | sort | while read day
+		do
+			./hottest-by-folder.sh $day
+		done
+	Example: ./daily-hottest.sh ../Week3/lost24/ | ./in-tsv-format.sh
+		=>  2011.10.20 14:00	28
+			2011.10.21 14:45	25
+			2011.10.22 16:45	28
+			2011.10.23 20:30	26
+			2011.10.24 13:45	30
+			...
+
+Fast draws with GnuPlot:
+	gnuplot hptemps-daily-maximums.p
+	see max-daily-temps.eps
+
+Winter is Coming:
+	see min-temp.sh
+
+I didn't see that one coming:
+	./daily-coldest.sh ../Week3/lost24 | ./in-tsv-format.sh 
+	see max-min-daily-temps.eps
+
+And that's a wrap:
+	done, see find-max-or-min.sh
